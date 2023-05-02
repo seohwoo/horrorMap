@@ -1,0 +1,43 @@
+fileFormatVersion: 2
+guid: 54fc8fb3b1777634da1844f8c910d95d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    ZEPETO_Character_Controller_1 = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nconst
+    ZEPETO_World_1 = require(\\\"ZEPETO.World\\\");\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nclass
+    CharacterController extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n   
+    constructor() {\\r\\n        super(...arguments);\\r\\n        this.isLocal =
+    true;\\r\\n    }\\r\\n    Start() {\\r\\n        // Set Character Spawn Position\\r\\n       
+    const spawnInfo = new ZEPETO_Character_Controller_1.SpawnInfo();\\r\\n       
+    spawnInfo.position = this.spawnPoint;\\r\\n        // Set Character Spawn Rotation\\r\\n       
+    spawnInfo.rotation = UnityEngine_1.Quaternion.Euler(this.spawnRot);\\r\\n       
+    if (this.isLocal) {\\r\\n            $extension(\\\"ZEPETO.Character.Controller.ZepetoPlayersExtension\\\").CreatePlayerWithZepetoId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    \\\"\\\", this.myId, spawnInfo, true);\\r\\n        }\\r\\n        else {\\r\\n           
+    $extension(\\\"ZEPETO.Character.Controller.ZepetoPlayersExtension\\\").CreatePlayerWithUserId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    ZEPETO_World_1.WorldService.userId, spawnInfo, true);\\r\\n        }\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => {\\r\\n            const player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer;\\r\\n       
+    });\\r\\n    }\\r\\n}\\r\\nexports.default = CharacterController;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoYXJhY3RlckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFDdEQsNkVBTXFDO0FBQ3JDLCtDQUE0QztBQUM1Qyw2Q0FBa0Q7QUFFbEQsTUFBcUIsbUJBQW9CLFNBQVEscUNBQXFCO0lBQXRFOztRQUVTLFlBQU8sR0FBUyxJQUFJLENBQUM7SUFpQzlCLENBQUM7SUF6QkMsS0FBSztRQUNILCtCQUErQjtRQUMvQixNQUFNLFNBQVMsR0FBRyxJQUFJLHVDQUFTLEVBQUUsQ0FBQztRQUNsQyxTQUFTLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7UUFDckMsK0JBQStCO1FBQy9CLFNBQVMsQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBRXJELElBQUksSUFBSSxDQUFDLE9BQU8sRUFBRTtZQUNoQixpRUFBdUIsd0JBQXdCLENBQS9DLDJDQUFhLENBQUMsUUFBUSxFQUNwQixFQUFFLEVBQ0YsSUFBSSxDQUFDLElBQUksRUFDVCxTQUFTLEVBQ1QsSUFBSSxFQUNKO1NBQ0g7YUFBTTtZQUNMLGlFQUF1QixzQkFBc0IsQ0FBN0MsMkNBQWEsQ0FBQyxRQUFRLEVBQ3BCLDJCQUFZLENBQUMsTUFBTSxFQUNuQixTQUFTLEVBQ1QsSUFBSSxFQUNKO1NBQ0g7UUFDRCwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxrQkFBa0IsQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQ3pELE1BQU0sTUFBTSxHQUFnQiwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUM7UUFDakUsQ0FBQyxDQUFDLENBQUM7SUFDTCxDQUFDO0NBQ0Y7QUFuQ0Qsc0NBbUNDIn0=\",\"assetPath\":\"Assets/script/CharacterController.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"mscorlib\",\"name\":\"isLocal\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"\uB85C\uCEEC\uBAA8\uB4DC
+    \uC5EC\uBD80 \uC120\uD0DD\\\"\"]}]},{\"assembly\":\"mscorlib\",\"name\":\"myId\",\"type\":\"System.String\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"\uC81C\uD398\uD1A0
+    \uC544\uC774\uB514. @ \uBE7C\uACE0 \uB123\uAE30\\\"\"]}]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"spawnPoint\",\"type\":\"UnityEngine.Vector3\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"\uCE90\uB9AD\uD130
+    \uC0DD\uC131 \uC704\uCE58\\\"\"]}]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"spawnRot\",\"type\":\"UnityEngine.Vector3\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"\\\"\uCE90\uB9AD\uD130
+    \uC0DD\uC131 \uD68C\uC804\uAC12\\\"\"]}]}],\"name\":\"CharacterController\",\"description\":\"\",\"hasAnimatorMove\":false},\"isCompiled\":true}"
+  typescriptHash: 5c0539b96bba32bc0b9763c3250a99d3
+  onlyWriteTrigger: 0

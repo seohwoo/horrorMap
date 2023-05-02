@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 04d272606afeee249be862b53bf30431
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Player extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.moveVec
+    = UnityEngine_1.Vector3.zero;\r\n    }\r\n    Start() {\r\n        this.rigid
+    = this.GetComponent($typeof(UnityEngine_1.Rigidbody));\r\n    }\r\n    Update()
+    {\r\n        this.moveVec.x = UnityEngine_1.Input.GetAxisRaw(\"Horizontal\");\r\n       
+    this.moveVec.z = UnityEngine_1.Input.GetAxisRaw(\"Vertical\");\r\n    }\r\n   
+    FixedUpdate() {\r\n        this.transform.Translate(this.moveVec.x * this.speed
+    * UnityEngine_1.Time.deltaTime, 0, this.moveVec.z * this.speed * UnityEngine_1.Time.deltaTime);\r\n   
+    }\r\n}\r\nexports.default = Player;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUGxheWVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBT3FCO0FBQ3JCLGlEQUFzRDtBQUV0RCxNQUFxQixNQUFPLFNBQVEscUNBQXFCO0lBQXpEOztRQUlTLFlBQU8sR0FBWSxxQkFBTyxDQUFDLElBQUksQ0FBQztJQWtCekMsQ0FBQztJQWhCQyxLQUFLO1FBQ0gsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHVCQUFTLEVBQUcsQ0FBQztJQUM5QyxDQUFDO0lBRUQsTUFBTTtRQUNKLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxHQUFHLG1CQUFLLENBQUMsVUFBVSxDQUFDLFlBQVksQ0FBQyxDQUFDO1FBQ2hELElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxHQUFHLG1CQUFLLENBQUMsVUFBVSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ2hELENBQUM7SUFFRCxXQUFXO1FBQ1QsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQ3RCLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxHQUFHLElBQUksQ0FBQyxLQUFLLEdBQUcsa0JBQUksQ0FBQyxTQUFTLEVBQzVDLENBQUMsRUFDRCxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsS0FBSyxHQUFHLGtCQUFJLENBQUMsU0FBUyxDQUM3QyxDQUFDO0lBQ0osQ0FBQztDQUNGO0FBdEJELHlCQXNCQyJ9","assetPath":"Assets/script/Player.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.PhysicsModule","name":"rigid","type":"UnityEngine.Rigidbody","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"moveVec","type":"UnityEngine.Vector3","isArray":false,"initValue":["zero"],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Player","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: d728cd8be33669e10c3e6406bbe1756c
+  onlyWriteTrigger: 0

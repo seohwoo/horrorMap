@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: c3256dd1cc2e0494aae15a056664710e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Bullet extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.elaspedtime = 0;\r\n    }\r\n    Update()
+    {\r\n        this.elaspedtime += UnityEngine_1.Time.deltaTime;\r\n        if
+    (this.time < this.elaspedtime) {\r\n            UnityEngine_1.Object.Destroy(this.gameObject);\r\n       
+    }\r\n        this.transform.Translate(0, 0, -this.speed * UnityEngine_1.Time.deltaTime);\r\n   
+    }\r\n}\r\nexports.default = Bullet;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnVsbGV0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQnVsbGV0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTJDO0FBQzNDLGlEQUFzRDtBQUV0RCxNQUFxQixNQUFPLFNBQVEscUNBQXFCO0lBTXZELEtBQUs7UUFDSCxJQUFJLENBQUMsV0FBVyxHQUFHLENBQUMsQ0FBQztJQUN2QixDQUFDO0lBRUQsTUFBTTtRQUNKLElBQUksQ0FBQyxXQUFXLElBQUksa0JBQUksQ0FBQyxTQUFTLENBQUM7UUFFbkMsSUFBSSxJQUFJLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxXQUFXLEVBQUU7WUFDaEMsb0JBQU0sQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO1NBQ2pDO1FBQ0QsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLElBQUksQ0FBQyxLQUFLLEdBQUcsa0JBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztJQUMvRCxDQUFDO0NBQ0Y7QUFsQkQseUJBa0JDIn0=","assetPath":"Assets/script/zepetoCode/Bullet.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"time","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Bullet","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: 5df21aebdf1f97bac691702d00fd54c6
+  onlyWriteTrigger: 0

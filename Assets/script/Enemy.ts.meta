@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 72d760aaab857bf46b902b6e07839294
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst __UnityEngine__ = require(\"UnityEngine\");\r\nconst
+    UnityEngine = require(\"UnityEngine\");\r\nconst UnityEngine_AI_1 = require(\"UnityEngine.AI\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Enemy extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.rigid = this.GetComponent($typeof(__UnityEngine__.Rigidbody));\r\n       
+    this.boxCollider = this.GetComponent($typeof(__UnityEngine__.BoxCollider));\r\n       
+    this.nav = this.GetComponent($typeof(UnityEngine_AI_1.NavMeshAgent));\r\n       
+    this._localCharacter =\r\n            ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character;\r\n   
+    }\r\n    Update() {\r\n        this.nav.SetDestination(this.target.position);\r\n   
+    }\r\n}\r\nexports.default = Enemy;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5lbXkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFbmVteS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwyQ0FBMkM7QUFDM0MsbURBQThDO0FBQzlDLDZFQUE2RTtBQUM3RSxpREFBc0Q7QUFFdEQsTUFBcUIsS0FBTSxTQUFRLHFDQUFxQjtJQVN0RCxLQUFLO1FBQ0gsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSx5QkFBYSxTQUFTLEVBQUcsQ0FBQztRQUN4RCxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQyxZQUFZLHlCQUFhLFdBQVcsRUFBRyxDQUFDO1FBQ2hFLElBQUksQ0FBQyxHQUFHLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyw2QkFBWSxFQUFHLENBQUM7UUFDN0MsSUFBSSxDQUFDLGVBQWU7WUFDbEIsMkNBQWEsQ0FBQyxRQUFRLENBQUMsV0FBVyxDQUFDLFlBQVksQ0FBQyxTQUFTLENBQUM7SUFDOUQsQ0FBQztJQUVELE1BQU07UUFDSixJQUFJLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBQ2hELENBQUM7Q0FDRjtBQXBCRCx3QkFvQkMifQ==","assetPath":"Assets/script/Enemy.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"target","type":"UnityEngine.Transform","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.PhysicsModule","name":"rigid","type":"UnityEngine.Rigidbody","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.PhysicsModule","name":"boxCollider","type":"UnityEngine.BoxCollider","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.AIModule","name":"nav","type":"UnityEngine.AI.NavMeshAgent","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Enemy","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: 50516b666648ee8bfcd641ca15e88f54
+  onlyWriteTrigger: 0

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 935e01ff6a03d7343bd1631f987bc5f4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass Shootgun extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.elapsedtime = 0;\r\n    }\r\n    Update()
+    {\r\n        this.elapsedtime += UnityEngine_1.Time.deltaTime;\r\n        if
+    (this.time < this.elapsedtime) {\r\n            UnityEngine_1.Object.Instantiate(this.bullet,
+    this.startpos.position, UnityEngine_1.Quaternion.identity);\r\n            this.elapsedtime
+    = 0;\r\n        }\r\n    }\r\n}\r\nexports.default = Shootgun;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2hvb3RndW4uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTaG9vdGd1bi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFzRDtBQUN0RCw2Q0FBOEU7QUFFOUUsTUFBcUIsUUFBUyxTQUFRLHFDQUFxQjtJQU96RCxLQUFLO1FBQ0gsSUFBSSxDQUFDLFdBQVcsR0FBRyxDQUFDLENBQUM7SUFDdkIsQ0FBQztJQUVELE1BQU07UUFDSixJQUFJLENBQUMsV0FBVyxJQUFJLGtCQUFJLENBQUMsU0FBUyxDQUFDO1FBRW5DLElBQUksSUFBSSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsV0FBVyxFQUFFO1lBQ2hDLG9CQUFNLENBQUMsV0FBVyxDQUNoQixJQUFJLENBQUMsTUFBTSxFQUNYLElBQUksQ0FBQyxRQUFRLENBQUMsUUFBUSxFQUN0Qix3QkFBVSxDQUFDLFFBQVEsQ0FDcEIsQ0FBQztZQUNGLElBQUksQ0FBQyxXQUFXLEdBQUcsQ0FBQyxDQUFDO1NBQ3RCO0lBQ0gsQ0FBQztDQUNGO0FBdkJELDJCQXVCQyJ9","assetPath":"Assets/script/Shootgun.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"bullet","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"time","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"startpos","type":"UnityEngine.Transform","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Shootgun","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: fbb01ffab617a4f59124ea25d9c15079
+  onlyWriteTrigger: 0
