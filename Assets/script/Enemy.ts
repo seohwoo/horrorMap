@@ -10,14 +10,10 @@ export default class Enemy extends ZepetoScriptBehaviour {
   public boxCollider: UnityEngine.BoxCollider;
   public nav: NavMeshAgent;
 
-  private _localCharacter: ZepetoCharacter;
-
   Start() {
     this.rigid = this.GetComponent<UnityEngine.Rigidbody>();
     this.boxCollider = this.GetComponent<UnityEngine.BoxCollider>();
     this.nav = this.GetComponent<NavMeshAgent>();
-    this._localCharacter =
-      ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character;
   }
 
   Update() {
